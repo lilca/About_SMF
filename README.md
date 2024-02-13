@@ -46,6 +46,14 @@ Format2の場合 :
 |nn,nn|Format0では、00,01で固定．Format1では最大00,0F？？？
 |tt,tt|最上位ビットが"0"なら"四分音符"の分割数．"1"なら秒の分割数？ **（＊１）***
 
+|15bit|上位バイト|下位バイト|
+|:-|:-|:-|
+|0|四分音符の分割数||
+|1|-24|24fps film|
+|~|-25|25fps PAL|
+|~|-29|30fps drop frame SMPTE|
+|~|-30|30fps non-drop SMPTE(NTSC)|
+
 ***＊１*** 詳細調査中
 
 ## トラックチャンク
@@ -112,3 +120,6 @@ o...オクターブ,  k...音階
 
 > SMF(Standard MIDI Files)の構造
 > https://sites.google.com/site/yyagisite/material/smfspec
+
+> タイムコードの形式
+> https://steinberg.help/cubase_elements_le_ai/v9.5/ja/cubase_nuendo/topics/synchronization/synchronization_timecode_standards_c.html
