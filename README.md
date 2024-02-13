@@ -11,6 +11,20 @@
 SMFは、ヘッダチャンクで始まり、それに続く１つ以上のトラックデータで構成される．
 
 ### 2.1. Format0の場合
+<table>
+  <thead>
+    <tr>
+      <th style="background-color : gray;">ファイル</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>ヘッダチャンク</td></tr>
+    <tr><td>トラックチャンク０</td></tr>
+    <tr><td>トラックチャンク１</td></tr>
+    <tr><td>:</td></tr>
+    <tr><td>トラックチャンクＮ−１</td></tr>
+  </tbody>
+</table>
 |<span style="background-color: gray;">ファイル</span>|
 |:-:|
 |ヘッダチャンク|
