@@ -50,9 +50,9 @@ Format2の場合 :
 |:-|:-:|:-|:-|:-|
 |0|四分音符の分割数||
 |1|-24<br>(24fps film)|
-|~|-25<br>(25fps PAL)|
-|~|-29<br>(30fps drop frame SMPTE)|
-|~|-30<br>(30fps non-drop SMPTE(NTSC))|
+|^|-25<br>(25fps PAL)|
+|^|-29<br>(30fps drop frame SMPTE)|
+|^|-30<br>(30fps non-drop SMPTE(NTSC))|
 
 ***＊１*** 詳細調査中
 
