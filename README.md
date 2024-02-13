@@ -59,50 +59,8 @@ SMFは、ヘッダチャンクで始まり、それに続く１つ以上のト�
 
 (データは１６進数表記でビックエンディアン)
 ```
-|データ|詳細|
-|:--|:--|
-|ff,ff|
-|nn,nn|Format0では、00,01で固定．Format1では最大00,0F？？？
-|tt,tt|最上位ビットが"0"なら"四分音符"の分割数．"1"なら秒の分割数？ **（＊１）***
 
-|15bit|上位バイト|下位バイト|分割数|説明|
-|:-|:-:|:-|:-|:-|
-|0|四分音符の分割数||
-|1|-24<br>(24fps film)|
-|^|-25<br>(25fps PAL)|
-|^|-29<br>(30fps drop frame SMPTE)|
-|^|-30<br>(30fps non-drop SMPTE(NTSC))|
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="2">1</th>
-      <th>3</th>
-      <th>4</th>
-      <th>5</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="3">1</td>
-      <td rowspan="2">1</td>
-      <td rowspan="2" colspan="2">2</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>7</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>3</td>
-      <td colspan="2">5</td>
-    </tr>
-  </tbody>
-</table>
-
-***＊１*** 詳細調査中
-
-## トラックチャンク
+## 4. トラックチャンク
 では、演奏を指示するデータや歌詞やテンポなどのデータが格納される．
 
 |名称|バイト数|説明|
@@ -161,6 +119,9 @@ o...オクターブ,  k...音階
 ので、大事なものだけ。
 
 ## 参照
+> MIDI 1.0 規格書
+> https://amei.or.jp/midistandardcommittee/MIDI1.0.pdf
+
 > SMF(Standard MIDI File)フォーマット解説
 > http://maruyama.breadfish.jp/tech/smf/
 
