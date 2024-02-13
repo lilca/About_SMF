@@ -46,13 +46,13 @@ Format2の場合 :
 |nn,nn|Format0では、00,01で固定．Format1では最大00,0F？？？
 |tt,tt|最上位ビットが"0"なら"四分音符"の分割数．"1"なら秒の分割数？ **（＊１）***
 
-|15bit|上位バイト|下位バイト|
-|:-|:-|:-|
+|15bit|上位バイト|下位バイト|分割数|説明|
+|:-|:-|:-|:-|:-|
 |0|四分音符の分割数||
-|1|-24|24fps film|
-|~|-25|25fps PAL|
-|~|-29|30fps drop frame SMPTE|
-|~|-30|30fps non-drop SMPTE(NTSC)|
+|1|-24(24fps film)|
+|~|-25(25fps PAL)|
+|~|-29<br>(30fps drop frame SMPTE)|
+|~|-30<br>(30fps non-drop SMPTE(NTSC))|
 
 ***＊１*** 詳細調査中
 
