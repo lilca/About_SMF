@@ -14,7 +14,7 @@ SMFは、ヘッダチャンクで始まり、それに続く１つ以上のト�
 <table>
   <thead>
     <tr>
-      <th style="background-color : gray;">ファイル</th>
+      <th><span style="background-color : gray;">ファイル</span></th>
     </tr>
   </thead>
   <tbody>
