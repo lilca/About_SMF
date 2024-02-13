@@ -1,4 +1,4 @@
-# About_SMF
+# SMF(Standard Music Files)について
 
 ## 1. フォーマットの種類
 |種類|説明|
